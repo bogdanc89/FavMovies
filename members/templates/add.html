@@ -1,0 +1,15 @@
+<h1>Add Movie</h1>
+
+<form action="addrecord/" method="post">
+{% csrf_token %}
+Name:<br>
+<input name="name">
+<br><br>
+Genre:<br>
+<input name="genre">
+<br><br>
+Year:<br>
+<input name="year">
+<br><br>
+<input type="submit" value="Submit">
+</form>

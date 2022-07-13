@@ -1,0 +1,17 @@
+<h1>Favorite Movies</h1>
+
+<table border="3.5">
+{% for x in mymembers %}
+<tr>
+<td><a href="update/{{ x.id }}">{{ x.id }}</a></td>
+<td>{{ x.Name }}</td>
+<td>{{ x.Genre }}</td>
+<td>{{ x.Year }}</td>
+<td><a href="delete/{{ x.id }}">Delete</a></td>
+</tr>
+{% endfor %}
+</table>
+
+<p>
+    <a href="add/">Add member</a>
+</p>
